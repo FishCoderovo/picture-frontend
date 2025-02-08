@@ -5,15 +5,13 @@
 </template>
 
 <script setup lang="ts">
-import BasicLayout from "@/layouts/BasicLayout.vue";
-import { useLoginUserStore } from '@/stores/useLoginUserStore.ts'
+import BasicLayout from '@/layouts/BasicLayout.vue'
 
-const loginUserStore = useLoginUserStore()
-loginUserStore.fetchLoginUser()
-
+// 已经改为在权限校验文件access.ts中获取
+// import { useLoginUserStore } from '@/stores/useLoginUserStore.ts'
+//
+// const loginUserStore = useLoginUserStore()
+// loginUserStore.fetchLoginUser()
 </script>
 
-
-<style scoped>
-
-</style>
+<style scoped></style>
